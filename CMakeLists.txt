@@ -31,7 +31,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-DNDEBUG -O2") # but currently only '-O2' is tested
 set(CMAKE_POSITION_INDEPENDENT_CODE ON) # Use "-fPIC" for all targets, including static libs
 
 find_package(PkgConfig)
-pkg_check_modules(JSONCPP REQUIRED kmsjsoncpp>=0.6.0)
+pkg_check_modules(JSONCPP REQUIRED jsoncpp>=0.6.0)
 
 find_package(Boost REQUIRED COMPONENTS unit_test_framework)
 
