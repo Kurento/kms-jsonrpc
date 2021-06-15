@@ -1,13 +1,14 @@
 Source: kms-jsonrpc
 Priority: optional
 Maintainer: Kurento <kurento@googlegroups.com>
-Build-Depends: debhelper-compat (= 13),
+Build-Depends:
  cmake,
+ debhelper-compat (= 13),
  kms-cmake-utils (>= 6.18.1),
  kmsjsoncpp-dev,
  libboost-dev,
  libboost-test-dev,
- pkg-config
+ pkg-config,
 Standards-Version: 4.0.0
 Vcs-Git: https://github.com/Kurento/kms-jsonrpc.git
 Vcs-Browser: https://github.com/Kurento/kms-jsonrpc
@@ -16,21 +17,28 @@ Homepage: https://kurento.openvidu.io/
 Package: kms-jsonrpc
 Architecture: any
 Section: libs
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: kms-jsonrpc-1.0
-Replaces: kms-jsonrpc-1.0
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Breaks:
+ kms-jsonrpc-1.0,
+Replaces:
+ kms-jsonrpc-1.0,
 Description: Kurento JSON-RPC library
  C++ implementation of the JSON-RPC Kurento Protocol.
 
 Package: kms-jsonrpc-dev
 Architecture: any
 Section: libdevel
-Depends: kms-jsonrpc (= ${binary:Version}),
+Depends:
+ kms-jsonrpc (= ${binary:Version}),
  kmsjsoncpp-dev,
  libboost-dev,
  libboost-test-dev,
- ${misc:Depends}
-Breaks: kms-jsonrpc-1.0-dev
-Replaces: kms-jsonrpc-1.0-dev
+ ${misc:Depends},
+Breaks:
+ kms-jsonrpc-1.0-dev,
+Replaces:
+ kms-jsonrpc-1.0-dev,
 Description: Kurento JSON-RPC library
  C++ implementation of the JSON-RPC Kurento Protocol - Development files.
