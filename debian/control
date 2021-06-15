@@ -25,7 +25,7 @@ Breaks:
  kms-jsonrpc-1.0,
 Replaces:
  kms-jsonrpc-1.0,
-Description: Kurento JSON-RPC library
+Description: JSON-RPC library for use by Kurento
  C++ implementation of the JSON-RPC Kurento Protocol.
 
 Package: kms-jsonrpc-dev
@@ -41,5 +41,5 @@ Breaks:
  kms-jsonrpc-1.0-dev,
 Replaces:
  kms-jsonrpc-1.0-dev,
-Description: Kurento JSON-RPC library
+Description: JSON-RPC dev library for building Kurento
  C++ implementation of the JSON-RPC Kurento Protocol - Development files.
