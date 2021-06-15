@@ -33,12 +33,3 @@ Breaks: kms-jsonrpc-1.0-dev
 Replaces: kms-jsonrpc-1.0-dev
 Description: Kurento JSON-RPC library
  C++ implementation of the JSON-RPC Kurento Protocol - Development files.
-
-Package: kms-jsonrpc-dbg
-Architecture: any
-Section: debug
-Depends: kms-jsonrpc (= ${binary:Version})
-Breaks: kms-jsonrpc-1.0-dbg
-Replaces: kms-jsonrpc-1.0-dbg
-Description: Kurento JSON-RPC library
- C++ implementation of the JSON-RPC Kurento Protocol - Debugging symbols.
