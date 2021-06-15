@@ -28,7 +28,8 @@ Section: libdevel
 Depends: kms-jsonrpc (= ${binary:Version}),
  kmsjsoncpp-dev,
  libboost-dev,
- libboost-test-dev
+ libboost-test-dev,
+ ${misc:Depends}
 Breaks: kms-jsonrpc-1.0-dev
 Replaces: kms-jsonrpc-1.0-dev
 Description: Kurento JSON-RPC library
