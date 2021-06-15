@@ -1,5 +1,6 @@
 Source: kms-jsonrpc
 Priority: optional
+Section: libs
 Maintainer: Kurento <kurento@googlegroups.com>
 Build-Depends:
  cmake,
@@ -17,7 +18,6 @@ Homepage: https://kurento.openvidu.io/
 
 Package: kms-jsonrpc
 Architecture: any
-Section: libs
 Depends:
  ${misc:Depends},
  ${shlibs:Depends},
