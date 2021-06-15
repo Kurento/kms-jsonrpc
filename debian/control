@@ -10,6 +10,7 @@ Build-Depends:
  libboost-test-dev,
  pkg-config,
 Standards-Version: 4.5.1
+Rules-Requires-Root: no
 Vcs-Git: https://github.com/Kurento/kms-jsonrpc.git
 Vcs-Browser: https://github.com/Kurento/kms-jsonrpc
 Homepage: https://kurento.openvidu.io/
