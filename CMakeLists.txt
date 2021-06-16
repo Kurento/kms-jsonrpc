@@ -50,13 +50,13 @@ install(FILES
   )
 
 set(CMAKE_MODULES_INSTALL_DIR
-  ${CMAKE_INSTALL_DATAROOTDIR}/cmake-${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}/Modules
+  ${CMAKE_INSTALL_DATAROOTDIR}/cmake/KmsJsonRpc
   CACHE STRING
   "Destination (relative to CMAKE_INSTALL_PREFIX) for cmake modules files"
 )
 
 install(FILES
-  ${CMAKE_CURRENT_BINARY_DIR}/FindKmsJsonRpc.cmake
+  ${CMAKE_CURRENT_BINARY_DIR}/FindKmsJsonRpc.cmake KmsJsonRpcConfig.cmake
   DESTINATION ${CMAKE_MODULES_INSTALL_DIR}
 )
 
