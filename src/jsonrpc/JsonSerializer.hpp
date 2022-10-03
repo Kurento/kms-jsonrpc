@@ -401,8 +401,6 @@ private:
   template<typename TKey>
   void Read (TKey key, std::string &value)
   {
-    std::cout << "############ Read(std::string)" << std::endl;
-
     value = JsonValue[key].asString ();
   }
 };
