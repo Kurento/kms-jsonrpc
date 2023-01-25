@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9),
  cmake,
  pkg-config,
  kms-cmake-utils (>= 7.0.0),
- kmsjsoncpp-dev,
+ libjsoncpp-dev,
  libboost-dev,
  libboost-test-dev
 Standards-Version: 4.0.0
